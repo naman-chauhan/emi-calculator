@@ -6,7 +6,7 @@
  * @param {number} interestRate             yearly interest rate in percent (8.5)
  *
  * @return {object}
- */
+
 function Loan (amount, installmentsNumber, interestRate) {
   /** Checking params */
   if (!amount ||
@@ -20,7 +20,7 @@ function Loan (amount, installmentsNumber, interestRate) {
   let principalSum = 0
   let sum = 0
 
-  for (let i = 0; i <= installmentsNumber; i++) {
+  for (let i = 0; i < installmentsNumber; i++) {
     const inst = getNextInstallment(
       amount, installmentsNumber, interestRate, principalSum, interestSum
     )
